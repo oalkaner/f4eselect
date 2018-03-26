@@ -1,0 +1,23 @@
+{
+  "name": "uxrocket.select",
+  "version": "3.7.3",
+  "homepage": "https://github.com/pozitif79/f4eselect",
+  "authors": [
+    "Ozgur Alkaner <ozguralkaner@gmail.com>"
+  ],
+  "description": "jQuery based multiple select box with new option",
+  "main": "lib/f4e.select.js",
+  "dependencies": {
+    "jquery": "latest",
+    "handlebars": "latest"
+  },
+  
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
