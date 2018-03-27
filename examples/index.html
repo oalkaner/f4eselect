@@ -39,17 +39,49 @@
                 });  
                 
                 console.log($.f4eselect.getSelected(dropdowns[0]));
-                $.f4eselect.addOption(dropdowns[0], {value : 'ozgur', text: 'Dynamically Added Option'}, 0);
+                //$.f4eselect.addOption(dropdowns[0], {value : 'ozgur', text: 'Dynamically Added Option'}, 0);
                 
 
             });
             
         </script>
     </head>
-    <body>
-        <div class='row'>
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
+     <body>
+        
+        <h2>Using Default Options</h2>
+        
+        <div class="row">
+            <div class="col-md-offset-1 col-md-11">
+                <select class='dropdown'>
+                    <option value='1' class="fa fa-eye" disabled>Google</option>
+                    <option value='2' class="fa fa-star">Facebook</option>
+                    <option value='3' data-content="<span class='label label-success'>Relish</span>">Feedback4e</option>
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+        </div>
+        
+        <h2>New Option</h2>
+                
+        <div class="row">
+            <div class="col-md-offset-1 col-md-11">
+                <select class='dropdown' data-newoption="Add New Company">
+                    <option value='1' class="fa fa-eye" disabled>Google</option>
+                    <option value='2' class="fa fa-star">Facebook</option>
+                    <option value='3' data-content="<span class='label label-success'>Relish</span>">Feedback4e</option>
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+        </div>
+        
+        <h2>All attributes</h2>
+        
+        <div class='row'>           
+            <div class="col-md-offset-1 col-md-11">
                 <select class='dropdown' data-description="Description goes here" data-newoption="New Company" data-size="4" data-seperator=' - ' data-searchNoItem='Sorry not found' data-multiple='true' data-searchtype='starts' data-sort='true' data-toolbar='true' data-search='true' data-selectLimit='2'>
                     <option value='1' data-class="fa fa-eye" disabled>Google</option>
                     <option value='2' data-class="fa fa-star">Facebook</option>
@@ -60,16 +92,6 @@
                     <option value='6'>StarTv</option>
                 </select>
             </div>
-              <div class="col-md-5">
-                <select class='dropdown' data-selecttext='Select Company...'>
-                <option value='1' class="fa fa-eye" disabled>Google</option>
-                <option value='2' class="fa fa-star">Facebook</option>
-                <option value='3' data-content="<span class='label label-success'>Relish</span>">Feedback4e</option>
-                <option value='4' >Pozitifik</option>
-                <option value='5'>Turkcell</option>
-                <option value='6'>StarTv</option>
-            </select>
-            </div>
         </div>
-    </body>        
+    </body>   
 </html>

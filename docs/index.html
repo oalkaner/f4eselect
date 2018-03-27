@@ -39,7 +39,7 @@
                 });  
                 
                 console.log($.f4eselect.getSelected(dropdowns[0]));
-                $.f4eselect.addOption(dropdowns[0], {value : 'ozgur', text: 'Dynamically Added Option'}, 0);
+                //$.f4eselect.addOption(dropdowns[0], {value : 'ozgur', text: 'Dynamically Added Option'}, 0);
                 
 
             });
@@ -47,29 +47,176 @@
         </script>
     </head>
     <body>
-        <div class='row'>
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
+        
+        <div class="row">
+            <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5">
+                <h2>Using Default Options</h2>
+                <select class='dropdown'>
+                    <option value='1'>Google</option>
+                    <option value='2'>Facebook</option>
+                    <option value='3'>Feedback4e</option>
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+              <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5">
+                  <h2>Add New Option</h2>
+                 <select class='dropdown' data-newoption="Add New Company" data-description="You can use above button to add your company">
+                    <option value='1' class="fa fa-eye" disabled>Google</option>
+                    <option value='2' class="fa fa-star">Facebook</option>
+                    <option value='3'>Feedback4e</option>
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+        </div>
+        
+        
+       
+                
+        <div class="row">
+            <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5">
+                 <h2>Size</h2>
+                <select class='dropdown' data-size="2" >
+                    <option value='1' disabled>Google</option>
+                    <option value='2' >Facebook</option>
+                    <option value='3'>Feedback4e</option>
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+            <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5">
+                 <h2>Option with subtext</h2>
+                 <select class='dropdown' data-size="2" >
+                    <option value='3' data-subtext="Great Company">Feedback4e</option>
+                    <option value='1'>Google</option>
+                    <option value='2' >Facebook</option>                    
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+        </div>
+        
+        
+       
+                
+        <div class="row">
+            
+            <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5" >
+                <h2>Single Select</h2>
+                <select class='dropdown' data-multiple='false' >
+                    <option value='3' data-subtext="Great Company">Feedback4e</option>
+                    <option value='1'>Google</option>
+                    <option value='2' >Facebook</option>                    
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+            
+             <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5" >
+                <h2>Width 400px</h2>
+                <select class='dropdown' data-width='400' >
+                    <option value='3' data-subtext="Great Company">Feedback4e</option>
+                    <option value='1'>Google</option>
+                    <option value='2' >Facebook</option>                    
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5" >
+                <h2>Option Class</h2>
+                <select class='dropdown' >
+                    <option value='3' data-subtext="Great Company" >Feedback4e</option>
+                    <option value='1' data-class='fa fa-eye'>Google</option>
+                    <option value='2' >Facebook</option>                    
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+            
+           <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5" >
+                <h2>Option Disabled</h2>
+                <select class='dropdown'  >
+                    <option value='3'>Feedback4e</option>
+                    <option value='1' data-disabled>Google</option>
+                    <option value='2' >Facebook</option>                    
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+            
+        </div>
+       
+         <div class="row">
+            
+          <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5" >
+                <h2>Disable Toolbar</h2>
+                <select class='dropdown' data-toolbar='false'>
+                    <option value='3'>Feedback4e</option>
+                    <option value='1' >Google</option>
+                    <option value='2' >Facebook</option>                    
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+            
+            
+             <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5" >
+                <h2>Option Divider</h2>
+                <select class='dropdown'>
+                    <option value='3'>Feedback4e</option>
+                    <option value='1' >Google</option>
+                    <option data-divider></option>
+                    <option value='2' >Facebook</option>                    
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+             
+        </div>
+       
+         <div class="row">
+            
+          <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5" >
+                <h2>Disable Search</h2>
+                <select class='dropdown' data-search='false'>
+                    <option value='3'>Feedback4e</option>
+                    <option value='1' >Google</option>
+                    <option value='2' >Facebook</option>                    
+                    <option value='4' >Amazon</option>
+                    <option value='5'>LinkedIn</option>
+                    <option value='6'>Microsoft</option>
+                </select>
+            </div>
+        
+              <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-offset-5">
+                 <h2>All attributes</h2>
                 <select class='dropdown' data-description="Description goes here" data-newoption="New Company" data-size="4" data-seperator=' - ' data-searchNoItem='Sorry not found' data-multiple='true' data-searchtype='starts' data-sort='true' data-toolbar='true' data-search='true' data-selectLimit='2'>
                     <option value='1' data-class="fa fa-eye" disabled>Google</option>
                     <option value='2' data-class="fa fa-star">Facebook</option>
                     <option value='3' data-content="<span class='label label-success'>Relish</span>">Feedback4e</option>
-                    <option value='4' data-subtext="Great Company">Pozitifik</option>
+                    <option value='4' data-subtext="Great Company">Feedback4e</option>
                     <option data-divider="true"></option>
-                    <option value='5'>Turkcell</option>
-                    <option value='6'>StarTv</option>
+                    <option value='5'>Amazon</option>
+                    <option value='6'>LinkedIn</option>
                 </select>
             </div>
-              <div class="col-md-5">
-                <select class='dropdown' data-selecttext='Select Company...'>
-                <option value='1' class="fa fa-eye" disabled>Google</option>
-                <option value='2' class="fa fa-star">Facebook</option>
-                <option value='3' data-content="<span class='label label-success'>Relish</span>">Feedback4e</option>
-                <option value='4' >Pozitifik</option>
-                <option value='5'>Turkcell</option>
-                <option value='6'>StarTv</option>
-            </select>
-            </div>
+             
         </div>
+       
     </body>        
 </html>

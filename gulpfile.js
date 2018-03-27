@@ -35,13 +35,16 @@ gulp.task('scripts', '', function () {
       .pipe(uglify({ mangle: true }))
 	  .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
       .pipe(concat('f4e.select.min.js'))
-      .pipe(gulp.dest('dist/'));
+      .pipe(gulp.dest('dist/'))
+      .pipe(gulp.dest('docs/'));
 });
 
 gulp.task('styles', '', function(){
     return gulp.src(config.css)
-     .pipe(gulp.dest('dist/'));
+     .pipe(gulp.dest('dist/'))
+     .pipe(gulp.dest('docs/'));
 });
+
 
 //Set a default tasks
 
