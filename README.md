@@ -38,7 +38,7 @@ Copy the contents of the dist directory to your project's installation path. f4e
 | onOpen | calls a function when menu is opened |
 | onClose | calls a function when menu is closed |
 
-# Data Attributes
+# Data Attributes on Select Element
 
 | Data Attribute | |
 | ------------- | ------------- |
@@ -53,6 +53,15 @@ Copy the contents of the dist directory to your project's installation path. f4e
 | toobar | Enable/disable toolbar , default is enabled |
 | sort | Enable/disable sort , default is enabled |
 | seperator | Item seperator text on select button |
+
+# Data Attributes On Option Elements
+
+| Data Attribute | |
+| ------------- | ------------- |
+| subtext | subtext display right next to option text |
+| content | when set contents of context is displayed rather then option text |
+| divider | displays a divider instead of select element |
+| class | adds an <i> element left to menu item. e.g. class='fa fa-eye'|
 
 # Methods
 
