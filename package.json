@@ -4,7 +4,7 @@
   "description": "multi-select with new option",
     "repository": {
     "type": "git",
-    "url": "https://github.com/pozitif79/f4eselect"
+    "url": "https://github.com/oalkaner/f4eselect"
   },
   "main": "gulpfile.js",
   "devDependencies": {
