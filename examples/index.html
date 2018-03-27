@@ -39,7 +39,14 @@
                 });  
                 
                 //var rrr = $dropdowns.selectedItems();            
-                console.log($.f4eselect.getSelectedItems(dropdowns[0]));
+                console.log($.f4eselect.getSelected(dropdowns[0]));
+                $.f4eselect.addOption(dropdowns[0], {value : 'ozgur', text: 'hello world'}, 0);
+                
+                setTimeout(function(){                     
+                    $.f4eselect.removeOption(dropdowns[0], 'ozgur');    
+                }, 5000)
+                
+                
                 
             });
             
