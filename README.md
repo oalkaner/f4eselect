@@ -1,5 +1,9 @@
 # f4eselect
 Jquery based multi select dropdown with create new option. It styles and adds new features to native html select element such as search , sort, multi-select, select all, deselect all, custom styled options, limiting max selection, adding new options on the fly.
+
+# Samples
+[Click](https://oalkaner.github.io/f4eselect/) to see sample configurations
+
 # Install
 Copy the contents of the dist directory to your project's installation path. f4eselect is dependent on jquery, handlebars, font-awasome which can be referenced by bower_components directory.
 ```
