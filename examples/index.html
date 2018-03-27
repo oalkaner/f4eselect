@@ -3,42 +3,43 @@
         <script src='../bower_components/jquery/dist/jquery.min.js'></script>
         <script src="../bower_components/handlebars/handlebars.min.js"></script>
         
-        <link rel="stylesheet" type="text/css" href="../dist/f4e.select.css">
-        <script src="../dist/f4e.select.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../lib/f4e.select.css">
+        <script src="../lib/f4e.select.js"></script>
                         
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <script>
             $(document).ready(function(){
-                var $dropdowns = $('.dropdown').f4eselect({
-                    onselect : function(item){
+                var dropdowns = $('.dropdown').f4eselect({
+                    onSelect : function(item){
                         console.log('Selected : ' + item.text);
                     },
                     
-                    ondeselect : function(item){
+                    onDeselect : function(item){
                         console.log('Deselected : ' + item.text);
                     },
-                    onselectall : function(){
+                    onSelectAll : function(){
                         console.log('selectedall');
                     },
-                    ondeselectall : function(){
+                    onDeselectAll : function(){
                         console.log('deselectall');
                     },
-                    onitemadd : function(newitem){
+                    onNewOption : function(newitem){
                         console.log(newitem);
                         return '4839dkds';
                     },
-                    onopen : function(){
+                    onOpen : function(){
                         console.log('menu opened');    
                     },
-                    onclose : function(){
+                    onClose : function(){
                         console.log('menu closed');
                     }
                     
                 });  
                 
-                console.log($.data($dropdowns[0]).f4eselect.selectedItems);
+                //var rrr = $dropdowns.selectedItems();            
+                console.log($.f4eselect.getSelectedItems(dropdowns[0]));
                 
             });
             
@@ -48,7 +49,7 @@
         <div class='row'>
             <div class="col-md-1"></div>
             <div class="col-md-5">
-                <select class='dropdown' data-selecttext='please select...'  data-description="Description goes here" data-newoption="New Company" data-size="4" data-seperator=' - ' data-searchNoItem='no item found' data-multiple data-searchtype='starts' >
+                <select class='dropdown' data-description="Description goes here" data-newoption="New Company" data-size="4" data-seperator=' - ' data-searchNoItem='Sorry not found' data-multiple='true' data-searchtype='starts' data-sort='true' data-toolbar='true' data-search='true' data-selectLimit='2'>
                     <option value='1' class="fa fa-eye" disabled>Google</option>
                     <option value='2' class="fa fa-star">Facebook</option>
                     <option value='3' data-content="<span class='label label-success'>Relish</span>">Feedback4e</option>
