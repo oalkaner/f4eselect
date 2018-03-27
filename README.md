@@ -38,7 +38,7 @@ Copy the contents of the dist directory to your project's installation path. f4e
 | onOpen | calls a function when menu is opened |
 | onClose | calls a function when menu is closed |
 
-# data attributes
+# Data Attributes
 
 | Data Attribute | |
 | ------------- | ------------- |
@@ -54,6 +54,17 @@ Copy the contents of the dist directory to your project's installation path. f4e
 | sort | Enable/disable sort , default is enabled |
 | seperator | Item seperator text on select button |
 
+# Methods
 
+| Method | |
+| ------------- | ------------- |
+| $(selector).f4eselect(options)  | Initialize the plugin with options  |
+| $.f4eselect.getSelected(el) | returns currently selected elements |
+| $.f4eselect.setSelected(el, value)| selects option with specified value |
+| $.f4eselect.close(el) | closes select  menu |
+| $.f4eselect.open(el) | opens select menu |
+| $.f4eselect.destroy(el) | destroys select element |
+| $.f4eselect.addOption(el, option , index) | Adds a new option to specifed index. option object = {value = '785', text='New Option'} |
+| $.f4eselect.removeOption(el,value) | Removes option with value |
 
 
