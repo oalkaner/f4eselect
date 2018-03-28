@@ -7,9 +7,7 @@
 
 .f4e-dropdown .f4e-button{
     display: inline-block;
-    font-weight: 400;
-    max-width: 25vh;
-    text-align: center;
+    font-weight: 400;    
     vertical-align: middle;
     border: 1px solid transparent;
     padding: 8px;
@@ -20,10 +18,63 @@
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    text-align: center;
 }
+
+.f4e-dropdown .f4e-button-link{
+    display: inline-block; 
+    color : #333;
+}
+
+.f4e-dropdown .f4e-button-link:hover{
+    color : #333;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0366d6 !important;
+}
+
+.f4e-dropdown .f4e-button-link:before {
+    margin-right:5px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: -2px;
+    content: "";
+    border: 4px solid;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.f4e-dropdown .f4e-button-select{
+    display: inline-block;    
+    color : #333;
+    border: 1px solid #DEDEDE;
+    padding: 6px;
+}
+
+.f4e-dropdown .f4e-button-select:hover{
+    color : #333;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0366d6 !important;
+}
+
+.f4e-dropdown .f4e-button-select:after {
+    float:right;
+    margin-top: 1vh;
+    margin-right:5px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: -2px;
+    content: "";
+    border: 4px solid;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
 
 .f4e-dropdown hr{
     margin-top:0px;
@@ -110,7 +161,7 @@
     border-width: 1px;
     padding: 1vh;
     padding-left:1.5vh;
-    line-height: 4vh;
+    line-height: 2.5vh;
 }
 
 .f4e-dropdown .f4e-menu-items .disabled{
