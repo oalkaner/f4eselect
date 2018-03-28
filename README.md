@@ -57,6 +57,10 @@ Copy the contents of the dist directory to your project's installation path. f4e
 | toobar | Enable/disable toolbar , default is enabled |
 | sort | Enable/disable sort , default is enabled |
 | seperator | Item seperator text on select button |
+| size | size of the select element in vw|
+| buttontype | button,link or select. Default is select |
+| wrapbuttontext | Wraps buttons text, useful during multiple selection mode |
+
 
 # Data Attributes On Option Elements
 
