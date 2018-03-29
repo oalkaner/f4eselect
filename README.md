@@ -1,5 +1,5 @@
 # f4eselect
-Jquery based multi select dropdown with create new option. It styles and adds new features to native html select element such as search , sort, multi-select, select all, deselect all, custom styled options, limiting max selection, adding new options on the fly.
+Jquery based multi select dropdown with create new select option. It styles and adds new features to native html select element such as search , sort, multi-select, select all, deselect all, custom styled options, limiting max selection, adding new options on the fly.
 
 # Samples
 [Click](https://oalkaner.github.io/f4eselect/) to see sample configurations
